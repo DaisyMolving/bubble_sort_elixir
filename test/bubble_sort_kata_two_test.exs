@@ -11,6 +11,8 @@ defmodule BubbleSortKataTest do
 
   test "swaps two numbers in a larger list if not ascending" do
     assert BubbleSortKata.sort([2, 1, 3]) == [1, 2, 3]
+    assert BubbleSortKata.sort([1, 2, 3, 5, 4]) == [1, 2, 3, 4, 5]
   end
+
 
 end
