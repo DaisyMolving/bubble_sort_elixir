@@ -1,7 +1,7 @@
 defmodule BubbleSortKata do
 
   def sort(numbers) do
-    traverse_list(numbers, Enum.count(numbers))
+    traverse_list(numbers, Enum.count(numbers) - 1)
   end
   
   def traverse_list(numbers, traversals) when traversals <= 1, do: sort(numbers, [])
