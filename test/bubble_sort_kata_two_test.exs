@@ -14,5 +14,8 @@ defmodule BubbleSortKataTest do
     assert BubbleSortKata.sort([1, 2, 3, 5, 4]) == [1, 2, 3, 4, 5]
   end
 
+  test "traverses list enough times that completely descending list will become ascending" do
+    assert BubbleSortKata.sort([5, 4, 3, 2, 1]) == [1, 2, 3, 4, 5]
+  end
 
 end
