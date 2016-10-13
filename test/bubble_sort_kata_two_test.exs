@@ -9,4 +9,8 @@ defmodule BubbleSortKataTest do
     assert BubbleSortKata.sort([2, 1]) == [1, 2]
   end
 
+  test "swaps two numbers in a larger list if not ascending" do
+    assert BubbleSortKata.sort([2, 1, 3]) == [1, 2, 3]
+  end
+
 end
