@@ -1,8 +1,7 @@
-defmodule BubbleSortKataTwoTest do
+defmodule BubbleSortKataTest do
   use ExUnit.Case
-  doctest BubbleSortKataTwo
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "a list of two numbers that is already ascending does not change" do
+    assert BubbleSortKata.sort([1, 2]) == [1, 2]
   end
 end
